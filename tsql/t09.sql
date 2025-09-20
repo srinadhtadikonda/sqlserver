@@ -1,8 +1,17 @@
 
-declare @i int
-set @i=1
-while @i<=10
-begin
-print @i
-set @i=@i+1
-end
+
+DECLARE @i INT;
+SET @i = 49
+BEGIN
+   IF @i%2=0
+      GOTO even;	
+else if @i%2!=0 
+goto odd;
+ END;
+even:
+   PRINT 'Number is even';
+return
+odd:
+print 'Number is Odd';
+
+GO
